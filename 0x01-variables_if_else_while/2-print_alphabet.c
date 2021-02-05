@@ -1,20 +1,17 @@
 #include <stdio.h>
 
 /**
- *main-generates a random number, then prints a string
+ *main-generate all letters
  *Return: Ends the program
  */
 
 int main(void)
 {
-	char ch = 97;
+	char alpha = 'a';
 
-	while (ch != 123)
+	for (alpha = 'a'; alpha <= 'z'; alpha++)
 	{
-		while (ch != 113)
-		{
-			putchar(ch);
-		}
+	putchar(alpha);
 	}
 	putchar('\n');
 	return (0);
