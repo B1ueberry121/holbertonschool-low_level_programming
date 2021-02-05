@@ -1,12 +1,10 @@
 #include <stdio.h>
-#include <time.h>
 #include <stdlib.h>
+#include <time.h>
 /**
- * main-Generates random value to a number
- *
- * Return:Ends the program
+ *main-Generates a random value
+ *Return:Ends program
  */
-
 int main(void)
 {
 	int n;
@@ -19,7 +17,7 @@ int main(void)
 	if (n == 0)
 	printf("%i is zero\n", 'n');
 	if (n < 0)
-	printf("%i is negative\n", 'n');
+	printf("%i is negative\n", -'n');
 	}
 	return (0);
 }
