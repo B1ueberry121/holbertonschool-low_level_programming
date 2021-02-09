@@ -1,1 +1,1 @@
-#define MYNAME "holberton.h"
+int _putchar(char c);
