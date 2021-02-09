@@ -2,7 +2,8 @@
 
 /**
  * _isalpha - Checks for caps letters
- * c - variable
+ * @c: variable
+ * Return: Ends the program
  */
 
 int _isalpha(int c)
