@@ -1,21 +1,17 @@
-#include <stdio.h>
 #include "holberton.h"
 
 /**
- * main - check the code for Holberton School students.
- *
- * Return: Always 0.
+ * print_alphabet-Generates the alphabet
  */
 
-int main(void)
+void print_alphabet(void)
 {
 	char alpha = 'a';
 
 	for (alpha = 'a'; alpha <= 'z'; alpha++)
 	{
-		putchar(alpha);
+		_putchar(alpha);
 	}
-	putchar('\n');
+	_putchar('\n');
 
-	return (0);
 }
