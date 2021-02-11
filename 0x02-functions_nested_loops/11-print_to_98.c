@@ -2,8 +2,8 @@
 #include <stdio.h>
 
 /**
- *
- *
+ * print_to_98 - Generates numbers to 98
+ * @n: Variable
  */
 
 void print_to_98(int n)
