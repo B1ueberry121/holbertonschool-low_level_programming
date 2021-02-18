@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * re_string - Reverses a string
+ * rev_string - Reverses a string
  * @s: pointer variable
  */
 
