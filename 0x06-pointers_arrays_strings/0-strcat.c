@@ -4,6 +4,7 @@
  * *_strcat - Concatenates two strings
  * @dest: pointer variable
  * @src: pointer variable
+ * Return: the result of the new string
  */
 
 char *_strcat(char *dest, char  *src)
@@ -21,4 +22,5 @@ char *_strcat(char *dest, char  *src)
 		n++;
 		c++;
 	}
+	return (dest);
 }
