@@ -22,6 +22,6 @@ int factorial(int n)
 	}
 	else
 	{
-		return(n);
+		return (n);
 	}
 }
