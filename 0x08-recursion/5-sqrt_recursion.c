@@ -13,7 +13,7 @@ int sqrt_check(int n, int c)
 	{
 		return (c);
 	}
-	else if (c >= (n / 2))
+	else if (c * c > n)
 	{
 		return (-1);
 	}
