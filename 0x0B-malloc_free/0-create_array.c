@@ -3,8 +3,8 @@
 
 /**
  * *create_array - creates an array of chars
- * size: the size of the array
- * c: the array
+ * @size: the size of the array
+ * @c: the array
  * Return: NULL
  */
 
