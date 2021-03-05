@@ -3,14 +3,16 @@
 #include <stdio.h>
 
 /**
- *
+ * check_length - checks the length of the string
+ * @s: string
+ * Return: the length of the string
  */
 
-int check_length(char *s1)
+int check_length(char *s)
 {
 	unsigned int len = 0;
 
-	while (s1[len] != '\0')
+	while (s[len] != '\0')
 	{
 		len++;
 	}
