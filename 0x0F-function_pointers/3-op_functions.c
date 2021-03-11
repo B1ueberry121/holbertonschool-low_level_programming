@@ -47,7 +47,7 @@ int op_div(int a, int b)
 {
 	return (a / b);
 }
-b
+
 /**
  * op_mod - function that modulates
  * @a: first number

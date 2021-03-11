@@ -1,10 +1,10 @@
 #include "3-calc.h"
 
 /**
- * main - 
- * @argc:
- * @argv:
- * Return:
+ * main - preforms simple operations
+ * @argc: counter
+ * @argv: vector
+ * Return: the result
  */
 
 int main(int argc, char *argv[])
