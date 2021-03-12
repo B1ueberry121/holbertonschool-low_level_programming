@@ -42,7 +42,6 @@ void sw_str(va_list pip)
 	if (s == NULL)
 	{
 		s = "(nil)";
-		printf("%s", s);
 	}
 	printf("%s", s);
 }
