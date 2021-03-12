@@ -70,7 +70,7 @@ void print_all(const char * const format, ...)
 
 	va_start(pip, format);
 
-	while (format[x] != '\0')
+	while (format != NULL && format[x] != '\0')
 	{
 		y = 0;
 
