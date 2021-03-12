@@ -1,7 +1,7 @@
 #include "variadic_functions.h"
 
 /**
- * print_char - prints a char
+ * sw_char - prints a char
  * @pip: char variable
  */
 
@@ -11,7 +11,7 @@ void sw_char(va_list pip)
 }
 
 /**
- * print_int - prints a integer
+ * sw_int - prints a integer
  * @pip: int variable
  */
 
@@ -21,7 +21,7 @@ void sw_int(va_list pip)
 }
 
 /**
- * print_flo - prints a float
+ * sw_flo - prints a float
  * @pip: float variable
  */
 
@@ -31,7 +31,7 @@ void sw_flo(va_list pip)
 }
 
 /**
- * print_str - prints a string
+ * sw_str - prints a string
  * @pip: pointer variable
  */
 
@@ -46,7 +46,7 @@ void sw_str(va_list pip)
 	}
 	printf("%s", s);
 }
- 
+
 /**
  * print_all - prints anything
  * @format: list of types of arguments
@@ -87,4 +87,5 @@ void print_all(const char * const format, ...)
 		x++;
 	}
 	putchar('\n');
+	va_end(pip);
 }
