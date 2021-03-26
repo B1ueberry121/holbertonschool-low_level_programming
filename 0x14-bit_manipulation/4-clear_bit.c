@@ -9,12 +9,11 @@
 
 int clear_bit(unsigned long int *n, unsigned int index)
 {
-	unsigned long int num2;
-	unsigned long int num;
-	unsigned long int count;
+	unsigned long int num2 = 0;
+	unsigned long int num = 0;
+	unsigned long int count = 0;
 	unsigned long int x;
 
-	num2 = count = num = 0;
 	x = *n;
 
 	if (index > 63)
@@ -23,23 +22,23 @@ int clear_bit(unsigned long int *n, unsigned int index)
 	}
 	while (count < 63)
 	{
-		num2 <<= 1;
+		num2 = num2 << 1;
 		if (count == index)
 		{
-			num2 += 1;
+			num2 += 0;
 		}
 		else
 		{
 			num2 += x & 1;
 		}
 		count++;
-		x >>= 1;
+		x = x >> 1;
 	}
 	while (count > 0)
 	{
-		num <<= 1;
+		num = num << 1;
 		num += num2 & 1;
-		num2 >>= 1;
+		num2 = num2 >> 1;
 		count--;
 	}
 	*n = num;
