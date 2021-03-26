@@ -2,7 +2,7 @@
 
 /**
  * set_bit - sets bit to 1 at a given index
- * @n: unsigned long int 
+ * @n: unsigned long int
  * @index: index to set the value to 1
  * Return: 1 if it succeds or -1 if it fails
  */
