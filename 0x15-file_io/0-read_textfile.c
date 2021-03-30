@@ -9,7 +9,7 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int i;
+	int file_d;
 	size_t byte;
 	char *buffer;
 
@@ -21,16 +21,16 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (filename == NULL)
 		return (0);
 
-	i = open(filename, O_RDONLY);
+	file_d = open(filename, O_RDONLY);
 
-	if (i == -1)
+	if (file_d == -1)
 		return (0);
 
-	byte = read(i, buffer, letters);
+	byte = read(file_d, buffer, letters);
 
 	write(STDOUT_FILENO, buffer, byte);
 
-	close(i);
+	close(file_d);
 	free(buffer);
 	return (byte);
 }
