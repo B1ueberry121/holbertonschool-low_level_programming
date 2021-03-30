@@ -19,17 +19,17 @@ int main(int ac, char **av)
 	if (ac != 3)
 	{
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
-		exxit(97);
+		exit(97);
 	}
 
 	file_from = open(av[1], O_RDONLY);
 	if (file_from == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", av[1];
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", av[1]);
 		exit(98);
 	}
 
-	file_from = open(av[2], O_CREAT | O_TRUNC | O_WRONLY, 00664);
+	file_to = open(av[2], O_CREAT | O_TRUNC | O_WRONLY, 00664);
 	if (file_to == -1)
 	{
 		close(file_from);
