@@ -7,15 +7,18 @@
 
 int main(void)
 {
-	unsigned int love = '0';
+	int love = '0';
 
-	for (love = '0'; love <= '9'; love++)
+	while (love <= '9')
 	{
 		putchar(love);
+		if (!(love == '9'))
+		{
 		putchar(',');
 		putchar(' ');
+		}
+		love++;
 	}
-
 	putchar('\n');
 
 	return (0);
