@@ -8,12 +8,13 @@
 
 char *leet(char *c)
 {
-	int idx = 0, x = 0;
+	int idx = 0, x;
 	char let[] = "aAeEoOtTlL";
 	char num[] = "4433007711";
 
 	while (c[idx] != '\0')
 	{
+		x = 0;
 		while (let[x] != '\0')
 		{
 			if (c[idx] == let[x])
