@@ -24,7 +24,7 @@ int _strcmp(char *s1, char *s2)
 	{
 		if (s1[idx] != s2[idx])
 			return (s1[idx] - s2[idx]);
-		idx++
+		idx++;
 	}
 	if (x > y)
 	{
