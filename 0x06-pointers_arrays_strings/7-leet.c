@@ -1,3 +1,5 @@
+#include "holberton.h"
+
 /**
  * leet - Converts a string to 1337
  * @c: string
