@@ -1,23 +1,23 @@
 #include "holberton.h"
 
 /**
- * print_chessboard - prints a chess board
+ * print_chessboard - print chessboard
  * @a: array
  */
 
 void print_chessboard(char (*a)[8])
 {
-	int row = 0, col = 0;
+	int x = 0, y = 0;
 
-	while (a[col][row] != '\0')
+	while (a[y][x] != '\0')
 	{
-		while (row < 8)
+		while (x < 8)
 		{
-			_putchar(a[col][row]);
-			row++;
+			_putchar(a[y][x]);
+			x++;
 		}
-		row = 0;
+		x = 0;
 		_putchar('\n');
-		col++;
+		y++;
 	}
 }
