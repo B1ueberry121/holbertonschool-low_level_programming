@@ -2,25 +2,24 @@
 
 /**
  * _strchr - locates a character in a stirng
- * @s: string to be searched through
- * @c: character to be located
+ * @s: string given
+ * @c: character given
  * Return: pointer to the first ocurrence c, NULL if character is not found
  */
 
-char *_strchr(char *s, char *c)
+char *_strchr(char *s, char c)
 {
-	int incre;
+	int i = 0;
 
-	for (incre = 0; s[incre] != '\0'; incre++)
+	while (s[i] != '\0')
 	{
-		if (s[incre] == c)
-		{
-			return (s + incre);
-		}
+		if (s[i] == c)
+			return (s + i);
+		i++;
 	}
-	if (s[incre] == c)
+	if (s[i] == c)
 	{
-		return (s + incre);
+		return (s + i);
 	}
 	return ('\0');
 }
